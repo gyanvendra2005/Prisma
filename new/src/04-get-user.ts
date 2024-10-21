@@ -6,7 +6,7 @@ const prisma = new PrismaClient()
 
 async function main() {
     const users = await prisma.user.findMany({});
-    console.log(users);
+    // console.log(users);
     const user = await prisma.user.findUnique({
         where: {
             id: 1
